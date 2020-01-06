@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		075E6AC123C2CE7D00E2E864 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075E6AC023C2CE7D00E2E864 /* DataService.swift */; };
+		075E6AC323C2D26F00E2E864 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075E6AC223C2D26F00E2E864 /* LoginScreen.storyboard */; };
 		07D6204423C2B8C900400D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6204323C2B8C900400D4A /* AppDelegate.swift */; };
 		07D6204623C2B8C900400D4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6204523C2B8C900400D4A /* SceneDelegate.swift */; };
 		07D6204823C2B8C900400D4A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6204723C2B8C900400D4A /* FirstViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		0083455BD6086FBA6969DF7F /* Pods-Breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.release.xcconfig"; path = "Target Support Files/Pods-Breakpoint/Pods-Breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 		075E6AC023C2CE7D00E2E864 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		075E6AC223C2D26F00E2E864 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		07D6204023C2B8C900400D4A /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D6204323C2B8C900400D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07D6204523C2B8C900400D4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				07D6205023C2B8CA00400D4A /* LaunchScreen.storyboard */,
 				07D6205323C2B8CA00400D4A /* Info.plist */,
 				07D6205E23C2BB7900400D4A /* GoogleService-Info.plist */,
+				075E6AC223C2D26F00E2E864 /* LoginScreen.storyboard */,
 			);
 			path = Breakpoint;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				07D6205223C2B8CA00400D4A /* LaunchScreen.storyboard in Resources */,
 				07D6205F23C2BB7900400D4A /* GoogleService-Info.plist in Resources */,
 				07D6204F23C2B8CA00400D4A /* Assets.xcassets in Resources */,
+				075E6AC323C2D26F00E2E864 /* LoginScreen.storyboard in Resources */,
 				07D6204D23C2B8C900400D4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
