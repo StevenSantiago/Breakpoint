@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthVC: UIViewController {
 
@@ -16,7 +17,18 @@ class AuthVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "toMain", sender: nil)
+        }
+    }
+    
+    @IBAction func loginFacebook(_ sender: Any) {
+    }
+    
+    @IBAction func loginGoogle(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

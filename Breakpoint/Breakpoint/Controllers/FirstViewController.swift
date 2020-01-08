@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FirstViewController: UIViewController {
 
@@ -15,6 +16,11 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser == nil {
+                performSegue(withIdentifier: "toMain", sender: nil)
+        }
+    }
 }
 

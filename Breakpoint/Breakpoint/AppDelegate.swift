@@ -12,10 +12,28 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+    
     func application(_ application: UIApplication,
       didFinishLaunchingWithOptions launchOptions:
         [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
       FirebaseApp.configure()
+        
+        //Only works below iOS 13
+//        if Auth.auth().currentUser == nil {
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//            let storyboard = UIStoryboard(name: "LoginScreen", bundle: nil)
+//            let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC") as! AuthVC
+//            //UIApplication.shared.windows.first?.rootViewController = authVC
+//            //window?.makeKeyAndVisible()
+//            //window?.rootViewController!.present(authVC, animated: true, completion: nil)
+//            self.window?.makeKeyAndVisible()
+//            self.window?.rootViewController = authVC
+//            //self.window?.rootViewController!.present(authVC, animated: true, completion: nil)
+//            //window?.rootViewController?.present(authVC, animated: true, completion: nil)
+//            //self.window!.makeKeyAndVisible()
+//
+//        }
       return true
     }
 

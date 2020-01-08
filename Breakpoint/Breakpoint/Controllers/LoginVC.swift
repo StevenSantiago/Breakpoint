@@ -7,13 +7,57 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginVC: UIViewController {
-
+    @IBOutlet weak var emailTextField: InsetTextField!
+    @IBOutlet weak var passwordTextField: InsetTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func closeButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func signInPressed(_ sender: Any) {
+        if let emailText = emailTextField.text , let passwordText = passwordTextField.text {
+            AuthService.instance.loginUser(withEmail: emailText, andPassword: passwordText) { [weak self] (result) in
+                switch result {
+                case .success( _):
+                    self?.performSegue(withIdentifier: "loginToMain", sender: nil)
+                    print("Success")
+                    
+                case .failure(let error):
+                    print("Failure:", error)
+                }
+            }
+            
+            AuthService.instance.registerUser(withEmail: emailText, andPassword: passwordText) { [weak self] (result)  in
+                switch result {
+                case .success( _):
+                    AuthService.instance.loginUser(withEmail: emailText, andPassword: passwordText) { [weak self] (result) in
+                        switch result {
+                        case .success( _):
+                            //self?.performSegue(withIdentifier: "loginToMain", sender: nil)
+                            print("Success")
+                            
+                        case .failure(let error):
+                            print("Failure:", error)
+                            return
+                        }
+                    }
+                    self?.performSegue(withIdentifier: "loginToMain", sender: nil)
+                    print("Success")
+                case .failure(let error):
+                    print("Failure:", error)
+                }
+            }
+        }
     }
     
 
@@ -27,4 +71,8 @@ class LoginVC: UIViewController {
     }
     */
 
+}
+
+extension LoginVC: UITextFieldDelegate {
+    
 }

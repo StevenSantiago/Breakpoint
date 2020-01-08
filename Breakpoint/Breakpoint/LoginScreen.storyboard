@@ -52,6 +52,9 @@
                                                         <state key="normal" title="LOGIN WITH FB">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="loginFacebook:" destination="Cdx-Mc-x5j" eventType="touchUpInside" id="Tfx-bL-Vyw"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQT-Fx-jh5">
                                                         <rect key="frame" x="0.0" y="113" width="354" height="102.5"/>
@@ -60,6 +63,9 @@
                                                         <state key="normal" title="LOGIN WITH G+">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="loginGoogle:" destination="Cdx-Mc-x5j" eventType="touchUpInside" id="dkX-VE-NEs"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -73,6 +79,9 @@
                                                 <rect key="frame" x="0.0" y="353" width="354" height="27"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                                                 <state key="normal" title=" by email" image="emailIcon"/>
+                                                <connections>
+                                                    <segue destination="uJG-pc-RtV" kind="show" id="CVz-zP-XiB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -101,25 +110,41 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="glx-H2-oCa"/>
                     </view>
+                    <connections>
+                        <segue destination="8qb-OK-mcd" kind="show" identifier="toMain" id="eHg-Rl-rNA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qEc-RV-0hm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="132.58928571428572"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="jr5-AB-5hH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="8qb-OK-mcd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kUD-5M-W82"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAJ-oT-sxI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="623"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="Srn-1m-vbv">
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="uJG-pc-RtV" customClass="LoginVC" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r3E-bf-5Lw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8k-eg-QRa">
-                                <rect key="frame" x="25" y="49" width="21" height="20"/>
+                                <rect key="frame" x="25" y="5" width="21" height="20"/>
                                 <state key="normal" backgroundImage="close"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="uJG-pc-RtV" eventType="touchUpInside" id="DEb-KA-bK0"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Jp9-jS-Ose">
-                                <rect key="frame" x="20" y="359" width="374" height="178"/>
+                                <rect key="frame" x="20" y="326" width="374" height="190"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SR0-ju-SnB">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
@@ -148,17 +173,21 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kW-ob-LdG">
-                                        <rect key="frame" x="0.0" y="158" width="374" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbg-h9-GVi">
+                                        <rect key="frame" x="0.0" y="158" width="374" height="32"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                                        <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <state key="normal" title="SIGN IN">
+                                            <color key="titleColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInPressed:" destination="uJG-pc-RtV" eventType="touchUpInside" id="JD1-g9-jgu"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="0ve-ab-Zfa" secondAttribute="trailing" id="2OO-pK-9eY"/>
                                     <constraint firstItem="SR0-ju-SnB" firstAttribute="centerX" secondItem="Jp9-jS-Ose" secondAttribute="centerX" id="3oK-nM-hmw"/>
-                                    <constraint firstItem="0kW-ob-LdG" firstAttribute="centerX" secondItem="Jp9-jS-Ose" secondAttribute="centerX" id="hlM-TR-GhA"/>
+                                    <constraint firstItem="Xbg-h9-GVi" firstAttribute="centerX" secondItem="Jp9-jS-Ose" secondAttribute="centerX" id="nDv-rU-ErX"/>
                                     <constraint firstItem="0ve-ab-Zfa" firstAttribute="leading" secondItem="Jp9-jS-Ose" secondAttribute="leading" id="vmq-XW-XhJ"/>
                                 </constraints>
                             </stackView>
@@ -173,6 +202,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="omJ-ij-1ul"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ebr-WW-Mg8"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="FAf-8j-iDU" id="LgF-QS-akl"/>
+                        <outlet property="passwordTextField" destination="IbD-f0-G1a" id="JUf-Hq-gRJ"/>
+                        <segue destination="8qb-OK-mcd" kind="show" identifier="loginToMain" id="kI1-t4-ozd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMh-bu-7Fs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,4 +219,7 @@
         <image name="emailIcon" width="25" height="16"/>
         <image name="loginBGImage" width="375" height="284"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="kI1-t4-ozd"/>
+    </inferredMetricsTieBreakers>
 </document>
