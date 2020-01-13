@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070687A723CC0C8D008EF590 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070687A623CC0C8D008EF590 /* MeVC.swift */; };
 		075E6AC123C2CE7D00E2E864 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075E6AC023C2CE7D00E2E864 /* DataService.swift */; };
 		075E6AC323C2D26F00E2E864 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075E6AC223C2D26F00E2E864 /* LoginScreen.storyboard */; };
 		075E6AC523C2DF7200E2E864 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075E6AC423C2DF7200E2E864 /* BaseLabel.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0083455BD6086FBA6969DF7F /* Pods-Breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.release.xcconfig"; path = "Target Support Files/Pods-Breakpoint/Pods-Breakpoint.release.xcconfig"; sourceTree = "<group>"; };
+		070687A623CC0C8D008EF590 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		075E6AC023C2CE7D00E2E864 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		075E6AC223C2D26F00E2E864 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		075E6AC423C2DF7200E2E864 /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				07D6204923C2B8C900400D4A /* GroupsVC.swift */,
 				075E6AC623C2F6F600E2E864 /* LoginVC.swift */,
 				075E6AC823C2F70500E2E864 /* AuthVC.swift */,
+				070687A623CC0C8D008EF590 /* MeVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				075E6AC523C2DF7200E2E864 /* BaseLabel.swift in Sources */,
 				075E6AC923C2F70500E2E864 /* AuthVC.swift in Sources */,
 				075E6AC723C2F6F600E2E864 /* LoginVC.swift in Sources */,
+				070687A723CC0C8D008EF590 /* MeVC.swift in Sources */,
 				075E6ACD23C2FAE500E2E864 /* ShadowView.swift in Sources */,
 				078F372F23C4025E000FD0BE /* AuthService.swift in Sources */,
 				07D6204823C2B8C900400D4A /* FeedVC.swift in Sources */,
