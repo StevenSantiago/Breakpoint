@@ -17,8 +17,8 @@
 		078F372F23C4025E000FD0BE /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F372E23C4025E000FD0BE /* AuthService.swift */; };
 		07D6204423C2B8C900400D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6204323C2B8C900400D4A /* AppDelegate.swift */; };
 		07D6204623C2B8C900400D4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6204523C2B8C900400D4A /* SceneDelegate.swift */; };
-		07D6204823C2B8C900400D4A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6204723C2B8C900400D4A /* FirstViewController.swift */; };
-		07D6204A23C2B8C900400D4A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6204923C2B8C900400D4A /* SecondViewController.swift */; };
+		07D6204823C2B8C900400D4A /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6204723C2B8C900400D4A /* FeedVC.swift */; };
+		07D6204A23C2B8C900400D4A /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6204923C2B8C900400D4A /* GroupsVC.swift */; };
 		07D6204D23C2B8C900400D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D6204B23C2B8C900400D4A /* Main.storyboard */; };
 		07D6204F23C2B8CA00400D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D6204E23C2B8CA00400D4A /* Assets.xcassets */; };
 		07D6205223C2B8CA00400D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D6205023C2B8CA00400D4A /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		07D6204023C2B8C900400D4A /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D6204323C2B8C900400D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07D6204523C2B8C900400D4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07D6204723C2B8C900400D4A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		07D6204923C2B8C900400D4A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		07D6204723C2B8C900400D4A /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		07D6204923C2B8C900400D4A /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		07D6204C23C2B8C900400D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07D6204E23C2B8CA00400D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07D6205123C2B8CA00400D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,8 +120,8 @@
 		07D6205B23C2B93900400D4A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				07D6204723C2B8C900400D4A /* FirstViewController.swift */,
-				07D6204923C2B8C900400D4A /* SecondViewController.swift */,
+				07D6204723C2B8C900400D4A /* FeedVC.swift */,
+				07D6204923C2B8C900400D4A /* GroupsVC.swift */,
 				075E6AC623C2F6F600E2E864 /* LoginVC.swift */,
 				075E6AC823C2F70500E2E864 /* AuthVC.swift */,
 			);
@@ -278,13 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D6204A23C2B8C900400D4A /* SecondViewController.swift in Sources */,
+				07D6204A23C2B8C900400D4A /* GroupsVC.swift in Sources */,
 				075E6AC523C2DF7200E2E864 /* BaseLabel.swift in Sources */,
 				075E6AC923C2F70500E2E864 /* AuthVC.swift in Sources */,
 				075E6AC723C2F6F600E2E864 /* LoginVC.swift in Sources */,
 				075E6ACD23C2FAE500E2E864 /* ShadowView.swift in Sources */,
 				078F372F23C4025E000FD0BE /* AuthService.swift in Sources */,
-				07D6204823C2B8C900400D4A /* FirstViewController.swift in Sources */,
+				07D6204823C2B8C900400D4A /* FeedVC.swift in Sources */,
 				07D6204423C2B8C900400D4A /* AppDelegate.swift in Sources */,
 				07D6204623C2B8C900400D4A /* SceneDelegate.swift in Sources */,
 				075E6AC123C2CE7D00E2E864 /* DataService.swift in Sources */,
